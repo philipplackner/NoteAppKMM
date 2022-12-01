@@ -31,7 +31,7 @@ struct NoteListScreen: View {
                 }, destinationProvider: {
                     NoteDetailScreen(
                         noteDataSource: noteDataSource,
-                        noteId: selectedNoteId
+                        noteId: nil
                     )
                 }, isSearchActive: viewModel.isSearchActive, searchText: $viewModel.searchText)
                 .frame(maxWidth: .infinity, minHeight: 40)
